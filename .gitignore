@@ -1,22 +1,52 @@
-# Переменные окружения
+# Environment variables
 .env
 
-# Базы данных
+# Database files
 *.db
 *.sqlite
 *.sqlite3
-autoservice.db
 
-# Резервные копии JSON
-*.json.bak
-users.json
-requests.json
-
-# Кэш Python
+# Python cache
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# JSON data files (if any)
+*.json
+!requirements.json
+
+# Lock files
+uv.lock
+poetry.lock
+Pipfile.lock
+
+# Distribution / packaging
 .Python
 build/
 develop-eggs/
@@ -30,47 +60,59 @@ parts/
 sdist/
 var/
 wheels/
-share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-PYTHONPATH
+MANIFEST
 
-# Виртуальные окружения
-venv/
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
 env/
+venv/
 ENV/
 env.bak/
 venv.bak/
-.venv/
 
-# IDE файлы
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Spyder project settings
+.spyderproject
+.spyproject
 
-# Логи
-*.log
-logs/
+# Rope project settings
+.ropeproject
 
-# Временные файлы
-*.tmp
-*.temp
+# mkdocs documentation
+/site
 
-# Файлы операционной системы
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Файлы Excel
-*.xlsx
-*.xls
-
-# uv lock файл
-uv.lock
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
